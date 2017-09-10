@@ -1,0 +1,4 @@
+add_executable(ThreadPoolTest ThreadPoolTest.cpp)
+target_link_libraries(ThreadPoolTest threadpool)
+
+add_executable(ThreadSpecificDataTest ThreadSpecificDataTest.cpp)
