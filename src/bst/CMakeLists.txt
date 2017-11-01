@@ -1,0 +1,2 @@
+add_executable(bstlog boosttest.cpp)
+target_link_libraries(bstlog boost_log boost_log_setup boost_date_time boost_system boost_thread boost_filesystem)

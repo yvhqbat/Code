@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ld/Code/src/bst/boosttest.cpp
+boost/log/trivial.hpp
+-
+boost/log/core.hpp
+-
+boost/log/expressions.hpp
+-
+

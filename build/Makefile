@@ -163,6 +163,19 @@ ThreadSpecificDataTest/fast:
 	$(MAKE) -f test/CMakeFiles/ThreadSpecificDataTest.dir/build.make test/CMakeFiles/ThreadSpecificDataTest.dir/build
 .PHONY : ThreadSpecificDataTest/fast
 
+#=============================================================================
+# Target rules for targets named bstlog
+
+# Build rule for target.
+bstlog: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bstlog
+.PHONY : bstlog
+
+# fast build rule for target.
+bstlog/fast:
+	$(MAKE) -f src/bst/CMakeFiles/bstlog.dir/build.make src/bst/CMakeFiles/bstlog.dir/build
+.PHONY : bstlog/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -176,6 +189,7 @@ help:
 	@echo "... threadpool"
 	@echo "... ThreadPoolTest"
 	@echo "... ThreadSpecificDataTest"
+	@echo "... bstlog"
 .PHONY : help
 
 

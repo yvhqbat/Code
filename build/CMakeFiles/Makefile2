@@ -78,7 +78,7 @@ src/preinstall:
 src/CMakeFiles/hello.dir/all:
 	$(MAKE) -f src/CMakeFiles/hello.dir/build.make src/CMakeFiles/hello.dir/depend
 	$(MAKE) -f src/CMakeFiles/hello.dir/build.make src/CMakeFiles/hello.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  4
 	@echo "Built target hello"
 .PHONY : src/CMakeFiles/hello.dir/all
 
@@ -113,7 +113,7 @@ clean: src/CMakeFiles/hello.dir/clean
 src/CMakeFiles/main.dir/all: src/CMakeFiles/hello.dir/all
 	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
 	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  5
 	@echo "Built target main"
 .PHONY : src/CMakeFiles/main.dir/all
 
@@ -148,7 +148,7 @@ clean: src/CMakeFiles/main.dir/clean
 src/CMakeFiles/threadpool.dir/all:
 	$(MAKE) -f src/CMakeFiles/threadpool.dir/build.make src/CMakeFiles/threadpool.dir/depend
 	$(MAKE) -f src/CMakeFiles/threadpool.dir/build.make src/CMakeFiles/threadpool.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  6
 	@echo "Built target threadpool"
 .PHONY : src/CMakeFiles/threadpool.dir/all
 
@@ -261,6 +261,56 @@ test/CMakeFiles/ThreadSpecificDataTest.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/ThreadSpecificDataTest.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/bst
+
+# Convenience name for "all" pass in the directory.
+src/bst/all: src/bst/CMakeFiles/bstlog.dir/all
+.PHONY : src/bst/all
+
+# Convenience name for "clean" pass in the directory.
+src/bst/clean: src/bst/CMakeFiles/bstlog.dir/clean
+.PHONY : src/bst/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/bst/preinstall:
+.PHONY : src/bst/preinstall
+
+#=============================================================================
+# Target rules for target src/bst/CMakeFiles/bstlog.dir
+
+# All Build rule for target.
+src/bst/CMakeFiles/bstlog.dir/all:
+	$(MAKE) -f src/bst/CMakeFiles/bstlog.dir/build.make src/bst/CMakeFiles/bstlog.dir/depend
+	$(MAKE) -f src/bst/CMakeFiles/bstlog.dir/build.make src/bst/CMakeFiles/bstlog.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ld/Code/build/CMakeFiles  3
+	@echo "Built target bstlog"
+.PHONY : src/bst/CMakeFiles/bstlog.dir/all
+
+# Include target in all.
+all: src/bst/CMakeFiles/bstlog.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/bst/CMakeFiles/bstlog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ld/Code/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/bst/CMakeFiles/bstlog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ld/Code/build/CMakeFiles 0
+.PHONY : src/bst/CMakeFiles/bstlog.dir/rule
+
+# Convenience name for target.
+bstlog: src/bst/CMakeFiles/bstlog.dir/rule
+.PHONY : bstlog
+
+# clean rule for target.
+src/bst/CMakeFiles/bstlog.dir/clean:
+	$(MAKE) -f src/bst/CMakeFiles/bstlog.dir/build.make src/bst/CMakeFiles/bstlog.dir/clean
+.PHONY : src/bst/CMakeFiles/bstlog.dir/clean
+
+# clean rule for target.
+clean: src/bst/CMakeFiles/bstlog.dir/clean
 .PHONY : clean
 
 #=============================================================================
